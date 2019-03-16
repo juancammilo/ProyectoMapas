@@ -15,26 +15,26 @@ import java.util.HashMap;
  */
 public class Persona {
     
-    private String cedula;
+    private int cedula;
     
     private String nombre;
     
     private String apellido;
     
-    Map<String, Persona> mapa;
+    Map<Integer, Persona> mapa;
 
-    public Persona(String cedula, String nombre, String apellido) {
+    public Persona(int cedula, String nombre, String apellido) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         mapa = new HashMap<>();
     }    
 
-    public String getCedula() {
+    public Integer getCedula() {
         return cedula;
     }
 
-    public void setCedula(String cedula) {
+    public void setCedula(int cedula) {
         this.cedula = cedula;
     }
 
@@ -54,11 +54,11 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public Map<String, Persona> getMapa() {
+    public Map<Integer, Persona> getMapa() {
         return mapa;
     }
 
-    public void setMapa(Map<String, Persona> mapa) {
+    public void setMapa(Map<Integer, Persona> mapa) {
         this.mapa = mapa;
     }
 
